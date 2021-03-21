@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout tools:context=".fragmente.ThirdFr"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/maintextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="164dp"
+        android:gravity="center_horizontal"
+        android:text="F2A2"
+        android:textAlignment="center"
+        android:textColor="#F00"
+        android:textSize="50sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/black"
+        android:onClick="toThirdFr"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintextview"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/black"
+        android:onClick="toFirstFr"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/maintextview"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/black"
+        android:onClick="Close"
+        android:text="close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/maintextview"
+        app:layout_constraintVertical_bias="0.223" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
